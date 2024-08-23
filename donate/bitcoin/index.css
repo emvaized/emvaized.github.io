@@ -11,6 +11,10 @@
     width: fit-content;
 }
 
+#logo {
+    margin: 12px 0;
+}
+
 #address {
     background: Background;
     border: 1px solid lightgray;
