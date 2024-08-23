@@ -1,5 +1,23 @@
+#header {
+    text-align: center;
+}
+
 #container {
-    background: rgba(123,123,123,0.5);
-    border-radius: 8px;
+    background: rgba(123,123,123,0.25);
+    border-radius: 4px;
     padding: 8px;
+    margin: 8px;
+    text-align: center;
+}
+
+#address {
+    background: Background;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px;
+}
+
+#qr {
+    border-radius: 4px;
 }
