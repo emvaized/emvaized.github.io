@@ -22,6 +22,8 @@
     padding: 8px;
     margin: 8px;
     display: block;
+    user-select: all; 
+    cursor: pointer;
 }
 
 #qr {
