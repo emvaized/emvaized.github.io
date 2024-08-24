@@ -1,11 +1,11 @@
 #header {
     border-bottom: 1px solid lightgray;
     padding: 8px;
+    text-align: center;
 }
 
 #header a {
     text-decoration: none;
-    text-align: center;
 }
 
 #container {
@@ -19,6 +19,7 @@
 
 #logo {
     margin: 48px auto 16px;
+    display: block;
 }
 
 #address {
