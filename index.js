@@ -11,8 +11,9 @@ class Project {
   }
 
 const projects = {
-    "Chrome / Firefox extensions": {
-        'logo': './assets/browser.png',
+    "Chrome and Firefox extensions": {
+        // 'logo': './assets/browser.png',
+        'logo': './assets/desktop.png',
         'items': [
             /// name, description, screenshot, icon, link
             new Project(
@@ -50,6 +51,13 @@ const projects = {
                 'https://github.com/emvaized/linkover-extension/blob/main/src/assets/icon.png?raw=true', 
                 'https://github.com/emvaized/linkover-extension',
             ),
+            new Project(
+                'Text reflow on zoom', 
+                'Reflows all text after a pinch gesture on a phone', 
+                'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/assets/illustration.gif?raw=true', 
+                'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/src/icon.png?raw=true', 
+                'https://github.com/emvaized/text-reflow-on-zoom-mobile',
+            ),
         ],
     },
 
@@ -60,7 +68,7 @@ const projects = {
                 'Modern Inverted Mouse Cursors',
                 'Recreates standard inverted mouse cursors in Windows with a modern design',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/all_cursors_with_title.png?raw=true',
-                '',
+                'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/illustration_of_inversion.gif?raw=true',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/'
             )
         ],
