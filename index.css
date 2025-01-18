@@ -44,7 +44,7 @@ body {
     /* background-image: linear-gradient(to bottom right, transparent, rgba(0,0,0,0.05)); */
 }
 
-.card:not(:last-child)::after{
+.card:not(:last-child):not(#last-card)::after{
     content: '';
     min-height: 41px;
     min-width: 1px;
@@ -52,8 +52,6 @@ body {
     background-color: lightgray;
     position: absolute;
     top: calc(100% + 1px);
-    /* left: 0; */
-    /* right: 0; */
     display: block;
     margin: 0 auto;
 }
