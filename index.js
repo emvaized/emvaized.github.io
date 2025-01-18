@@ -188,6 +188,7 @@ function init(){
             if (project.github){
                 const link = document.createElement('a');
                 link.href = project.github;
+                link.target = '_blank';
                 link.appendChild(projectCard);
                 scroller.appendChild(link);
             } else {
