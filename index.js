@@ -14,18 +14,19 @@ const projects = {
     "Chrome / Firefox extensions": {
         'logo': './assets/browser.png',
         'items': [
+            /// name, description, screenshot, icon, link
             new Project(
-                'Selecton', 
-                'Selecton provides popup with actions on text selection', 
+                'SelectON', 
+                'Provides popup with actions on text selection', 
                 'https://github.com/emvaized/selecton-extension/blob/master/screenshots/screenshot.png?raw=true', 
-                'https://github.com/emvaized/selecton-extension/raw/master/icons/logo-new.png', 
+                'https://github.com/emvaized/selecton-extension/raw/master/src/assets/icons/logo-new.png', 
                 'https://github.com/emvaized/selecton-extension/tree/master', 
             ),
             new Project(
                 'Circle Mouse Gestures', 
                 'Mouse gestures with visual representation of actions', 
                 'https://github.com/emvaized/circle-mouse-gestures/blob/master/screenshots/screenshot.png?raw=true', 
-                'https://github.com/emvaized/circle-mouse-gestures/blob/master/icons/icon-new.png?raw=true', 
+                'https://github.com/emvaized/circle-mouse-gestures/blob/master/src/assets/icons/icon-new.png?raw=true', 
                 'https://github.com/emvaized/circle-mouse-gestures/blob/master/',
             ),
             new Project(
@@ -39,22 +40,16 @@ const projects = {
                 'Open in Popup Window', 
                 'Allows to open any links and images in a popup window', 
                 'https://github.com/emvaized/open-in-popup-window-extension/blob/main/screenshots/context-menu.png?raw=true', 
-                'https://github.com/emvaized/open-in-popup-window-extension/blob/main/icon.png?raw=true', 
+                'https://github.com/emvaized/open-in-popup-window-extension/blob/main/src/assets/icon.png?raw=true', 
                 'https://github.com/emvaized/open-in-popup-window-extension',
             ),
-        ],
-    },
-
-    'Kwin scripts for KDE Plasma': {
-        'logo': './assets/kde-logo.png',
-        'items': [
             new Project(
-                'KDE Snap Assist',
-                'Suggests other window thumbnails on snap',
-                'https://github.com/emvaized/kde-snap-assist/blob/main/assets/screenshot.png?raw=true',
-                'https://github.com/emvaized/kde-snap-assist/blob/main/assets/logo.png?raw=true',
-                'https://github.com/emvaized/kde-snap-assist/'
-            )
+                'Linkover', 
+                'Loads info about any link on hover or long click', 
+                'https://github.com/emvaized/linkover-extension/blob/main/screenshots/4.png?raw=true', 
+                'https://github.com/emvaized/linkover-extension/blob/main/src/assets/icon.png?raw=true', 
+                'https://github.com/emvaized/linkover-extension',
+            ),
         ],
     },
 
@@ -69,7 +64,21 @@ const projects = {
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/'
             )
         ],
-    }
+    },
+
+    'KDE Plasma': {
+        'logo': './assets/kde-logo.png',
+        'items': [
+            new Project(
+                'KDE Snap Assist',
+                'KWin script which suggests other windows on window snap',
+                'https://github.com/emvaized/kde-snap-assist/blob/main/assets/screenshot.png?raw=true',
+                'https://github.com/emvaized/kde-snap-assist/blob/main/assets/logo.png?raw=true',
+                'https://github.com/emvaized/kde-snap-assist/'
+            )
+        ],
+    },
+
 }
 
 document.addEventListener("DOMContentLoaded", init);
@@ -141,6 +150,3 @@ function init(){
         document.body.insertBefore(card, document.getElementById('last-card'))
     })
 }
-
-
-
