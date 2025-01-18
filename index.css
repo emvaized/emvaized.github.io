@@ -106,17 +106,38 @@ ul.horizontal-list {
     padding-bottom: 12px;
     padding-right: 15px;
     /* mask-image: linear-gradient(to left, transparent, white 3ch); */
-  } 
+} 
 
-  ul.horizontal-list li { 
+ul.horizontal-list li { 
     margin-right: 10px; 
-  }
+}
 
-  a:has(li) {
+a:has(li) {
     text-decoration: none;
     color: inherit;
-  }
+}
 
-  #last-card a {
+#last-card a {
     margin-right: 8px;
-  }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: rgb(40,41,44);
+        color: white;
+    }
+    .card {
+        background-color: rgba(256,256,256,0.05) !important;
+        border: 1px solid rgba(256,256,256,0.1);
+    }
+    .inner {
+        background-color: rgba(256,256,256,0.1) !important;
+        border: 1px solid rgba(256,256,256,0.1);
+    }
+    .card:not(:last-child):not(#last-card)::after{
+        background-color: gray;
+    }
+    #github-button {
+        filter: invert(1)
+    }
+}
