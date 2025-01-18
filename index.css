@@ -121,6 +121,11 @@ a:has(li) {
     margin-right: 8px;
 }
 
+.badge {
+    margin-top: 4px;
+    margin-right: 4px;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: rgb(40,41,44);

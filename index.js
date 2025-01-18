@@ -1,12 +1,11 @@
 class Project {
-    constructor(name, description, thumbnail, logo, github, chrome, firefox) {
+    constructor(name, description, thumbnail, logo, github, badges) {
       this.name = name;
       this.description = description;
       this.thumbnail = thumbnail;
       this.logo = logo;
       this.github = github;
-      this.chrome = chrome;
-      this.firefox = firefox;
+      this.badges = badges;
     }
   }
 
@@ -22,6 +21,10 @@ const projects = {
                 'https://github.com/emvaized/selecton-extension/blob/master/screenshots/screenshot.png?raw=true', 
                 'https://github.com/emvaized/selecton-extension/raw/master/src/assets/icons/logo-new.png', 
                 'https://github.com/emvaized/selecton-extension/tree/master', 
+                [
+                    'https://img.shields.io/chrome-web-store/users/pemdbnndbdpbelmfcddaihdihdfmnadi?label=users&logo=googlechrome&logoColor=white&color=blue', 
+                    'https://img.shields.io/chrome-web-store/rating/pemdbnndbdpbelmfcddaihdihdfmnadi', 
+                ]
             ),
             new Project(
                 'Circle Mouse Gestures', 
@@ -29,13 +32,10 @@ const projects = {
                 'https://github.com/emvaized/circle-mouse-gestures/blob/master/screenshots/screenshot.png?raw=true', 
                 'https://github.com/emvaized/circle-mouse-gestures/blob/master/src/assets/icons/icon-new.png?raw=true', 
                 'https://github.com/emvaized/circle-mouse-gestures/blob/master/',
-            ),
-            new Project(
-                'Google Tweaker', 
-                'Customize the Google Search page', 
-                'https://lh3.googleusercontent.com/dHV7KuW2w8ZhsYUCiQD9NY5s7bkKML2kmph7ucVoKkWXmful7OGyaACjOd76-9hW8cYQBwbaI-cXsgOycA-Cai6vNHA=s1280-w1280-h800',
-                'https://github.com/emvaized/google-tiles-extension/blob/master/icons/icon-new.png?raw=true', 
-                'https://github.com/emvaized/google-tiles-extension', 
+                [
+                    'https://img.shields.io/chrome-web-store/users/kkknhbbfjlibfjagilggkcelmcobgefa?label=users&logo=googlechrome&logoColor=white&color=blue',
+                    'https://img.shields.io/chrome-web-store/rating/kkknhbbfjlibfjagilggkcelmcobgefa'
+                ]
             ),
             new Project(
                 'Open in Popup Window', 
@@ -43,6 +43,21 @@ const projects = {
                 'https://github.com/emvaized/open-in-popup-window-extension/blob/main/screenshots/context-menu.png?raw=true', 
                 'https://github.com/emvaized/open-in-popup-window-extension/blob/main/src/assets/icon.png?raw=true', 
                 'https://github.com/emvaized/open-in-popup-window-extension',
+                [
+                    'https://img.shields.io/chrome-web-store/users/gmnkpkmmkhbgnljljcchnakehlkihhie?label=users&logo=googlechrome&logoColor=white&color=blue)](https://chrome.google.com/webstore/detail/open-in-popup-window/gmnkpkmmkhbgnljljcchnakehlkihhie',
+                    'https://img.shields.io/amo/users/open-in-popup-window?color=%23FF6611&label=users&logo=Firefox'
+                ]
+            ),
+            new Project(
+                'Google Tweaker', 
+                'Customize the Google Search page', 
+                'https://lh3.googleusercontent.com/dHV7KuW2w8ZhsYUCiQD9NY5s7bkKML2kmph7ucVoKkWXmful7OGyaACjOd76-9hW8cYQBwbaI-cXsgOycA-Cai6vNHA=s1280-w1280-h800',
+                'https://github.com/emvaized/google-tiles-extension/blob/master/icons/icon-new.png?raw=true', 
+                'https://github.com/emvaized/google-tiles-extension',
+                [
+                    'https://img.shields.io/chrome-web-store/users/cjbgjibpaopnjfbhipjfckeodbaednbg?label=users&logo=googlechrome&logoColor=white&color=blue',
+                    'https://img.shields.io/chrome-web-store/rating/cjbgjibpaopnjfbhipjfckeodbaednbg'
+                ]
             ),
             new Project(
                 'Linkover', 
@@ -50,6 +65,10 @@ const projects = {
                 'https://github.com/emvaized/linkover-extension/blob/main/screenshots/4.png?raw=true', 
                 'https://github.com/emvaized/linkover-extension/blob/main/src/assets/icon.png?raw=true', 
                 'https://github.com/emvaized/linkover-extension',
+                [
+                    'https://img.shields.io/chrome-web-store/users/hnjipbfndeondflbdhomiiohbmkjobfc?label=users&logo=googlechrome&logoColor=white&color=blue',
+                    'https://img.shields.io/amo/users/linkover?color=%23FF6611&label=users&logo=Firefox'
+                ]
             ),
             new Project(
                 'Text reflow on zoom', 
@@ -57,6 +76,10 @@ const projects = {
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/assets/illustration.gif?raw=true', 
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/src/icon.png?raw=true', 
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile',
+                [
+                    'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=Firefox+users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/text-reflow-on-zoom-mobile/',
+                    'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
+                ]
             ),
         ],
     },
@@ -69,7 +92,11 @@ const projects = {
                 'Recreates standard inverted mouse cursors in Windows with a modern design',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/all_cursors_with_title.png?raw=true',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/illustration_of_inversion.gif?raw=true',
-                'https://github.com/emvaized/modern_inverted_mouse_cursors/'
+                'https://github.com/emvaized/modern_inverted_mouse_cursors/',
+                [
+                    'https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fbackend.deviantart.com%2Foembed%3Furl%3Dhttps%3A%2F%2Fwww.deviantart.com%2Femvaized%2Fart%2FModern-Inverted-Mouse-Cursors-for-Windows-10-11-1016675934&query=%24.community.statistics._attributes.views&logo=DeviantArt&logoColor=00e59b&label=views&labelColor=black&color=grey',
+                    'https://img.shields.io/github/downloads/emvaized/modern_inverted_mouse_cursors/total?label=downloads'
+                ]
             )
         ],
     },
@@ -82,7 +109,10 @@ const projects = {
                 'KWin script which suggests other windows on window snap',
                 'https://github.com/emvaized/kde-snap-assist/blob/main/assets/screenshot.png?raw=true',
                 'https://github.com/emvaized/kde-snap-assist/blob/main/assets/logo.png?raw=true',
-                'https://github.com/emvaized/kde-snap-assist/'
+                'https://github.com/emvaized/kde-snap-assist/',
+                [
+                    'https://img.shields.io/badge/dynamic/xml?url=https%3A%2F%2Fapi.kde-look.org%2Focs%2Fv1%2Fcontent%2Fdata%2F1875687&query=%2Focs%2Fdata%2Fcontent%2Fdownloads&logo=kde&label=downloads'
+                ]
             )
         ],
     },
@@ -141,6 +171,18 @@ function init(){
                 description.innerText = project.description;
                 description.className = 'description';
                 projectCard.appendChild(description);
+            }
+
+
+            if (project.badges) {
+                const margin = document.createElement('br');
+                projectCard.appendChild(margin);
+                project.badges.forEach(function(badge){
+                    const img = document.createElement('img');
+                    img.src = badge;
+                    img.className = 'badge';
+                    projectCard.appendChild(img);
+                })
             }
 
             if (project.github){
