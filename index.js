@@ -129,6 +129,7 @@ function init(){
 
         let card = document.createElement('div');
         card.className = 'card';
+        card.style.opacity = 0;
 
         const categoryTitle = document.createElement('h4');
         categoryTitle.className = 'category-title';
@@ -275,7 +276,6 @@ function init(){
         card.style.zIndex = 6 - i;
         if (i > 0) {
             card.style.animationDelay = ((i - 1) / 4) + 's';
-            card.style.opacity = 0;
             card.classList.add('animated-card');
             setTimeout(function(){
                 card.style.opacity = 1;

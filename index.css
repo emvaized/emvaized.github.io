@@ -254,7 +254,7 @@ a:has(li) {
         font-size:24px;
     }
 } */
-@media (max-width: 940px) {
+@media (max-width: 1080px) {
     body{
        font-size: 1.5vh;
     }
