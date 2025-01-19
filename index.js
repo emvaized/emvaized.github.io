@@ -143,6 +143,56 @@ function init(){
         scroller.className = 'horizontal-list';
         card.appendChild(scroller)
 
+        /// scroll buttons
+        if (projects[category].items.length > 1){
+            const leftArrow = document.createElement('div');
+            leftArrow.className = 'arrow arrow-left';
+            const iconBack = document.createElement('img');
+            iconBack.className = 'arrow-icon';
+            iconBack.src = './assets/arrow-forward-ios.png';
+            iconBack.style.transform = 'rotate(180deg) translate(2px)';
+            leftArrow.appendChild(iconBack);
+            card.appendChild(leftArrow);
+
+            const rightArrow = document.createElement('div');
+            rightArrow.className = 'arrow arrow-right';
+            const iconForward = document.createElement('img');
+            iconForward.className = 'arrow-icon';
+            iconForward.src = './assets/arrow-forward-ios.png';
+            rightArrow.appendChild(iconForward);
+            card.appendChild(rightArrow);
+
+            leftArrow.onclick = function(){
+                scroller.scrollBy({
+                    left: -230,
+                    behavior: "smooth",
+                });
+            }
+            rightArrow.onclick = function(){
+                scroller.scrollBy({
+                    left: 230,
+                    behavior: "smooth",
+                })
+            }
+        }
+
+        function onCarouselScroll(){
+            const leftArrow = card.querySelector('.arrow-left');
+            const rightArrow = card.querySelector('.arrow-right');
+            if (scroller.scrollLeft > 10){
+                leftArrow.style.visibility = 'visible';
+            } else {
+                leftArrow.style.visibility = 'hidden';
+            }
+            if (scroller.scrollLeft + scroller.clientWidth < scroller.scrollWidth - 10){
+                rightArrow.style.visibility = 'visible';
+            } else {
+                rightArrow.style.visibility = 'hidden';
+            }
+        }
+        scroller.onscroll = onCarouselScroll;
+        setTimeout(onCarouselScroll, 100);
+
         projects[category].items.forEach(function(project){
             const projectCard = document.createElement('li');
             projectCard.className = 'inner';
@@ -200,4 +250,13 @@ function init(){
         // container.appendChild(card)
         document.body.insertBefore(card, document.getElementById('last-card'))
     })
+
+    // document.addEventListener('scroll', function(){
+    //     const scrollTop = window.scrollY; 
+    //     const docHeight = document.documentElement.scrollHeight; 
+    //     const winHeight = window.innerHeight; 
+    //     const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
+    //     const waves = document.querySelector('.waves');
+    //     waves.style.height = 50.0 + (40.0 * Math.max(0, ( Math.round(scrollPercent) / 100))) + '%';
+    // })
 }
