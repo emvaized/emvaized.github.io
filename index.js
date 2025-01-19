@@ -123,9 +123,13 @@ document.addEventListener("DOMContentLoaded", init);
 function init(){
     const keys = Object.keys(projects);
 
-    keys.forEach(function(category){
+    // keys.forEach(function(category){
+    for(let i = 0, l = keys.length; i < l; i++){
+        const category = keys[i];
+
         let card = document.createElement('div');
         card.className = 'card';
+
         const categoryTitle = document.createElement('h4');
         categoryTitle.className = 'category-title';
         categoryTitle.innerText = category;
@@ -248,7 +252,7 @@ function init(){
         })
         // container.appendChild(card)
         document.body.insertBefore(card, document.getElementById('last-card'))
-    })
+    }
 
     // document.addEventListener('scroll', function(){
     //     const scrollTop = window.scrollY; 
@@ -258,4 +262,18 @@ function init(){
     //     const waves = document.querySelector('.waves');
     //     waves.style.height = 50.0 + (40.0 * Math.max(0, ( Math.round(scrollPercent) / 100))) + '%';
     // })
+
+    /// Animate all cards
+    const cards = document.querySelectorAll('.card');
+    for (let i = 0; i < cards.length; i++){
+        const card = cards[i];
+        if (i > 0) {
+            card.style.animationDelay = ((i - 1) / 4) + 's';
+            card.classList.add('animated-card');
+            card.style.opacity = 0;
+            setTimeout(function(){
+                card.style.opacity = 1;
+            }, ((i / 4) * 1000));
+        }
+    }
 }

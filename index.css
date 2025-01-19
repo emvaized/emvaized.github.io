@@ -46,6 +46,16 @@ body {
     position: relative;
     background: white;
     /* background-image: linear-gradient(to bottom right, transparent, rgba(0,0,0,0.05)); */
+
+}
+
+.animated-card{
+    opacity: 1;
+    animation: .3s ease-out 0s 1 slide-down-transition;
+}
+
+.card:first-child {
+    animation: .3s ease-out 0s 1 fade-in-transition;
 }
 
 .card:not(:last-child):not(#last-card)::after{
@@ -199,6 +209,7 @@ a:has(li) {
     max-height:65%;
     z-index: -1;
     /* transform:rotate(45deg) scale(2.0) */
+    animation: .3s ease-out 0s 1 fade-in-transition;
 }
   
 .parallax > use {
@@ -258,3 +269,22 @@ a:has(li) {
         height: 400px;
     }
 } */
+
+@keyframes slide-down-transition {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+@keyframes fade-in-transition {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+} 
