@@ -184,7 +184,7 @@ function init(){
             } else {
                 leftArrow.style.visibility = 'hidden';
             }
-            if (scroller.scrollLeft + scroller.clientWidth < scroller.scrollWidth - 10){
+            if (scroller.scrollLeft + scroller.clientWidth < scroller.scrollWidth - 40){
                 rightArrow.style.visibility = 'visible';
             } else {
                 rightArrow.style.visibility = 'hidden';
