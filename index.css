@@ -259,7 +259,7 @@ a:has(li) {
         font-size:24px;
     }
 } */
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
     body{
        font-size: 1.5vh;
     }
@@ -281,7 +281,7 @@ a:has(li) {
     .card .badge {
         height: 1.5vh;
     }
-}
+} */
 
 @keyframes slide-down-transition {
     /* 0% {
