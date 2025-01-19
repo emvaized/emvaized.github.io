@@ -34,13 +34,14 @@ body {
 
 .card {
     padding: 20px;
-    /* box-shadow: 0 12px 12px rgba(0,0,0,0.05); */
+    box-shadow: 0 12px 12px rgba(0,0,0,0.05);
     border-radius: 8px;
     border: 1px solid lightgray;
     max-width: 680px;
     margin: 0 auto;
     margin-top: 40px;
     position: relative;
+    background: white;
     /* background-image: linear-gradient(to bottom right, transparent, rgba(0,0,0,0.05)); */
 }
 
@@ -133,10 +134,12 @@ a:has(li) {
     }
     .card {
         background-color: rgba(256,256,256,0.05) !important;
+        background-color: rgb(50, 50, 50) !important;
         border: 1px solid gray;
     }
     .inner {
         background-color: rgba(256,256,256,0.1) !important;
+        background-color: rgb(60, 60, 60) !important;
         border: 1px solid gray;
     }
     .card:not(:last-child):not(#last-card)::after{
@@ -147,6 +150,62 @@ a:has(li) {
     }
 }
 
+
+/* Wave animation  */
+.waves {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:50%;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:30%;
+    max-height:65%;
+    z-index: -1;
+    /* transform:rotate(45deg) scale(2.0) */
+}
+  
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 12s;
+}
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 12s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 15s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+
+/*Shrinking for mobile*/
+/* @media (max-width: 768px) {
+    .waves {
+        height:40px;
+        min-height:40px;
+    }
+    .content {
+        height:30vh;
+    }
+    h1 {
+        font-size:24px;
+    }
+} */
 /* @media (max-width: 1000px) {
     body{
        font-size: 1.75vh;
