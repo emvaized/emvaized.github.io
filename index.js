@@ -10,9 +10,8 @@ class Project {
   }
 
 const projects = {
-    "Chrome and Firefox extensions": {
-        // 'logo': './assets/browser.png',
-        'logo': './assets/desktop.png',
+    "Browser extensions (Chrome and Firefox)": {
+        'logo': './assets/browser.png',
         'items': [
             /// name, description, screenshot, icon, link
             new Project(
