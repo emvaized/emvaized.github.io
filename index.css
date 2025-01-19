@@ -133,13 +133,13 @@ a:has(li) {
         color: white;
     }
     .card {
-        background-color: rgba(256,256,256,0.05) !important;
-        background-color: rgb(50, 50, 50) !important;
+        background-color: rgba(256,256,256,0.05);
+        background-color: rgb(50, 50, 50);
         border: 1px solid gray;
     }
     .inner {
-        background-color: rgba(256,256,256,0.1) !important;
-        background-color: rgb(60, 60, 60) !important;
+        background-color: rgba(256,256,256,0.1);
+        background-color: rgb(60, 60, 60);
         border: 1px solid gray;
     }
     .card:not(:last-child):not(#last-card)::after{
