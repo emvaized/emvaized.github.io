@@ -11,12 +11,13 @@ class Project {
 
 const projects = {
     "Browser extensions (Chrome and Firefox)": {
-        'logo': './assets/browser.png',
+        // 'logo': './assets/browser.png',
+        'logo': './assets/desktop.png',
         'items': [
             /// name, description, screenshot, icon, link
             new Project(
                 'SelectON', 
-                'Provides popup with actions on text selection', 
+                'Configurable popup with actions on text selection', 
                 'https://github.com/emvaized/selecton-extension/blob/master/screenshots/screenshot.png?raw=true', 
                 'https://github.com/emvaized/selecton-extension/raw/master/src/assets/icons/logo-new.png', 
                 'https://github.com/emvaized/selecton-extension/tree/master', 
@@ -38,7 +39,7 @@ const projects = {
             ),
             new Project(
                 'Open in Popup Window', 
-                'Allows to open any links and images in a popup window', 
+                'Open any links and images in a popup window', 
                 'https://github.com/emvaized/open-in-popup-window-extension/blob/main/screenshots/context-menu.png?raw=true', 
                 'https://github.com/emvaized/open-in-popup-window-extension/blob/main/src/assets/icon.png?raw=true', 
                 'https://github.com/emvaized/open-in-popup-window-extension',
@@ -65,7 +66,8 @@ const projects = {
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/src/icon.png?raw=true', 
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile',
                 [
-                    'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=Firefox+users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/text-reflow-on-zoom-mobile/',
+                    // 'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=Firefox+users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/text-reflow-on-zoom-mobile/',
+                    'https://img.shields.io/amo/users/open-in-popup-window?color=%23FF6611&label=users&logo=Firefox',
                     'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
                 ]
             ),
@@ -88,7 +90,7 @@ const projects = {
         'items': [
             new Project(
                 'Modern Inverted Mouse Cursors',
-                'Recreates standard inverted mouse cursors in Windows with a modern design',
+                'Modern cursor pack for Windows 10/11 with cursors changing color according to background',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/all_cursors_with_title.png?raw=true',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/illustration_of_inversion.gif?raw=true',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/',
