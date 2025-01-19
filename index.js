@@ -204,6 +204,7 @@ function init(){
                 const thumbnail = document.createElement('img');
                 thumbnail.className = 'thumbnail';
                 thumbnail.height = '150px';
+                thumbnail.loading = 'lazy';
                 thumbnail.src= project.thumbnail;
                 projectCard.appendChild(thumbnail);
             }
@@ -226,7 +227,6 @@ function init(){
                 projectCard.appendChild(description);
             }
 
-
             if (project.badges) {
                 const margin = document.createElement('br');
                 projectCard.appendChild(margin);
@@ -234,6 +234,7 @@ function init(){
                     const img = document.createElement('img');
                     img.src = badge;
                     img.className = 'badge';
+                    img.loading = 'lazy';
                     projectCard.appendChild(img);
                 })
             }
