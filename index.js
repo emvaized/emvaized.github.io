@@ -267,10 +267,11 @@ function init(){
     const cards = document.querySelectorAll('.card');
     for (let i = 0; i < cards.length; i++){
         const card = cards[i];
+        card.style.zIndex = 6 - i;
         if (i > 0) {
             card.style.animationDelay = ((i - 1) / 4) + 's';
-            card.classList.add('animated-card');
             card.style.opacity = 0;
+            card.classList.add('animated-card');
             setTimeout(function(){
                 card.style.opacity = 1;
             }, ((i / 4) * 1000));
