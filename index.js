@@ -150,6 +150,8 @@ function init(){
         if (projects[category].items.length > 1){
             const leftArrow = document.createElement('div');
             leftArrow.className = 'arrow arrow-left';
+            leftArrow.title = 'Scroll left';
+
             const iconBack = document.createElement('img');
             iconBack.className = 'arrow-icon';
             iconBack.src = './assets/arrow-forward-ios.png';
@@ -159,6 +161,8 @@ function init(){
 
             const rightArrow = document.createElement('div');
             rightArrow.className = 'arrow arrow-right';
+            rightArrow.title = 'Scroll right';
+
             const iconForward = document.createElement('img');
             iconForward.className = 'arrow-icon';
             iconForward.src = './assets/arrow-forward-ios.png';
