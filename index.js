@@ -60,17 +60,6 @@ const projects = {
                 ]
             ),
             new Project(
-                'Linkover', 
-                'Loads info about any link on hover or long click', 
-                'https://github.com/emvaized/linkover-extension/blob/main/screenshots/4.png?raw=true', 
-                'https://github.com/emvaized/linkover-extension/blob/main/src/assets/icon.png?raw=true', 
-                'https://github.com/emvaized/linkover-extension',
-                [
-                    'https://img.shields.io/chrome-web-store/users/hnjipbfndeondflbdhomiiohbmkjobfc?label=users&logo=googlechrome&logoColor=white&color=blue',
-                    'https://img.shields.io/amo/users/linkover?color=%23FF6611&label=users&logo=Firefox'
-                ]
-            ),
-            new Project(
                 'Text reflow on zoom', 
                 'Reflows all text after a pinch gesture on a phone', 
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/assets/illustration.gif?raw=true', 
@@ -79,6 +68,17 @@ const projects = {
                 [
                     'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=Firefox+users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/text-reflow-on-zoom-mobile/',
                     'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
+                ]
+            ),
+            new Project(
+                'Linkover', 
+                'Loads info about any link on hover or long click', 
+                'https://github.com/emvaized/linkover-extension/blob/main/screenshots/4.png?raw=true', 
+                'https://github.com/emvaized/linkover-extension/blob/main/src/assets/icon.png?raw=true', 
+                'https://github.com/emvaized/linkover-extension',
+                [
+                    'https://img.shields.io/chrome-web-store/users/hnjipbfndeondflbdhomiiohbmkjobfc?label=users&logo=googlechrome&logoColor=white&color=blue',
+                    'https://img.shields.io/amo/users/linkover?color=%23FF6611&label=users&logo=Firefox'
                 ]
             ),
         ],
