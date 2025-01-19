@@ -91,6 +91,7 @@ body {
 .inner .title {
     margin-bottom: 6px;
     margin-top: 0px;
+    text-wrap: nowrap;
 }
 
 .inner .description {
