@@ -67,7 +67,7 @@ const projects = {
                 'https://github.com/emvaized/text-reflow-on-zoom-mobile',
                 [
                     // 'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=Firefox+users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/text-reflow-on-zoom-mobile/',
-                    'https://img.shields.io/amo/users/open-in-popup-window?color=%23FF6611&label=users&logo=Firefox',
+                    'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=users&logo=Firefox',
                     'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
                 ]
             ),
