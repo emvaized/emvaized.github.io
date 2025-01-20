@@ -49,6 +49,17 @@ const projects = {
                 ]
             ),
             new Project(
+                'Text reflow on zoom', 
+                'Reflows all text after a pinch gesture on a phone', 
+                'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/assets/illustration.gif?raw=true', 
+                'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/src/icon.png?raw=true', 
+                'https://github.com/emvaized/text-reflow-on-zoom-mobile',
+                [
+                    'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=users&logo=Firefox',
+                    'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
+                ]
+            ),
+            new Project(
                 'Google Tweaker', 
                 'Customize the Google Search page', 
                 'https://lh3.googleusercontent.com/dHV7KuW2w8ZhsYUCiQD9NY5s7bkKML2kmph7ucVoKkWXmful7OGyaACjOd76-9hW8cYQBwbaI-cXsgOycA-Cai6vNHA=s1280-w1280-h800',
@@ -57,18 +68,6 @@ const projects = {
                 [
                     'https://img.shields.io/chrome-web-store/users/cjbgjibpaopnjfbhipjfckeodbaednbg?label=users&logo=googlechrome&logoColor=white&color=blue',
                     'https://img.shields.io/chrome-web-store/rating/cjbgjibpaopnjfbhipjfckeodbaednbg'
-                ]
-            ),
-            new Project(
-                'Text reflow on zoom', 
-                'Reflows all text after a pinch gesture on a phone', 
-                'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/assets/illustration.gif?raw=true', 
-                'https://github.com/emvaized/text-reflow-on-zoom-mobile/blob/main/src/icon.png?raw=true', 
-                'https://github.com/emvaized/text-reflow-on-zoom-mobile',
-                [
-                    // 'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=Firefox+users&logo=Firefox)](https://addons.mozilla.org/firefox/addon/text-reflow-on-zoom-mobile/',
-                    'https://img.shields.io/amo/users/text-reflow-on-zoom-mobile?color=%23FF6611&label=users&logo=Firefox',
-                    'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
                 ]
             ),
             new Project(
