@@ -90,7 +90,7 @@ const projects = {
         'items': [
             new Project(
                 'Modern Inverted Mouse Cursors',
-                'Modern cursor pack for Windows 10/11 with cursors changing color according to background',
+                'Modern cursor pack for Windows 10/11 with cursors changing color depending on the background',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/all_cursors_with_title.png?raw=true',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/blob/main/screenshots/illustration_of_inversion.gif?raw=true',
                 'https://github.com/emvaized/modern_inverted_mouse_cursors/',
@@ -254,21 +254,10 @@ function init(){
             } else {
                 scroller.appendChild(projectCard)
             }
-            // projectCard.onclick = function(){window.open(project.github, '_blank')}
-    
         })
         // container.appendChild(card)
         document.body.insertBefore(card, document.getElementById('last-card'))
     }
-
-    // document.addEventListener('scroll', function(){
-    //     const scrollTop = window.scrollY; 
-    //     const docHeight = document.documentElement.scrollHeight; 
-    //     const winHeight = window.innerHeight; 
-    //     const scrollPercent = (scrollTop / (docHeight - winHeight)) * 100;
-    //     const waves = document.querySelector('.waves');
-    //     waves.style.height = 50.0 + (40.0 * Math.max(0, ( Math.round(scrollPercent) / 100))) + '%';
-    // })
 
     /// Animate all cards
     const cards = document.querySelectorAll('.card');
@@ -277,11 +266,7 @@ function init(){
         card.style.zIndex = 6 - i;
         if (i > 0) {
             card.style.animationDelay = ((i - 1) / 4) + 's';
-        // card.style.opacity = 0;
             card.classList.add('animated-card');
-            // setTimeout(function(){
-            //     card.style.opacity = 1;
-            // }, ((i / 4) * 1000));
         }
     }
 }
