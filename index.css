@@ -187,8 +187,8 @@ a:has(li) {
     }
     .card {
         background-color: rgba(256,256,256,0.05);
-        background-color: rgb(50, 50, 50);
-        border: 1px solid gray;
+        background-color: rgb(50, 50, 50) !important;
+        border: 1px solid gray !important;
     }
     .inner {
         background-color: rgba(256,256,256,0.1);
