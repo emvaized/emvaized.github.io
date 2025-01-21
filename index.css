@@ -47,12 +47,7 @@ body {
     background: white;
 }
 
-.card:not(:first-child) {
-    
-}
-
 .animated-card{
-    /* opacity: 1; */
     transform: translateY(-75%);
     opacity: 0;
     animation: .3s ease-out 0s 1 slide-down-transition;
@@ -74,6 +69,7 @@ body {
     top: calc(100% + 1px);
     display: block;
     margin: 0 auto;
+    left: 32px;
 }
 
 .category-title{
@@ -180,29 +176,6 @@ a:has(li) {
     margin: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background: rgb(40,41,44);
-        color: white;
-    }
-    .card {
-        background-color: rgba(256,256,256,0.05);
-        background-color: rgb(50, 50, 50) !important;
-        border: 1px solid gray !important;
-    }
-    .inner {
-        background-color: rgba(256,256,256,0.1);
-        background-color: rgb(60, 60, 60);
-        border: 1px solid gray;
-    }
-    .card:not(:last-child):not(#last-card)::after{
-        background-color: gray;
-    }
-    #github-button {
-        filter: invert(1)
-    }
-}
-
 /* Wave animation  */
 .waves {
     position:fixed;
@@ -214,10 +187,9 @@ a:has(li) {
     min-height:30%;
     max-height:65%;
     z-index: -1;
-    /* transform:rotate(45deg) scale(2.0) */
     animation: .9s ease-out 0s 1 fade-in-transition;
 }
-  
+
 .parallax > use {
     animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
 }
@@ -236,14 +208,6 @@ a:has(li) {
 .parallax > use:nth-child(4) {
     animation-delay: -5s;
     animation-duration: 20s;
-}
-@keyframes move-forever {
-    0% {
-        transform: translate3d(-90px,0,0);
-    }
-    100% { 
-        transform: translate3d(85px,0,0);
-    }
 }
 
 /*Shrinking for mobile*/
@@ -283,11 +247,16 @@ a:has(li) {
     }
 }
 
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px,0,0);
+    }
+    100% { 
+        transform: translate3d(85px,0,0);
+    }
+}
+
 @keyframes slide-down-transition {
-    /* 0% {
-      transform: translateY(-75%);
-      opacity: 0;
-    } */
     to {
       transform: translateY(0);
       opacity: 1;
@@ -301,4 +270,27 @@ a:has(li) {
     100% {
       opacity: 1;
     }
-} 
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: rgb(40,41,44);
+        color: white;
+    }
+    .card {
+        background-color: rgba(256,256,256,0.05);
+        background-color: rgb(50, 50, 50) !important;
+        border: 1px solid gray !important;
+    }
+    .inner {
+        background-color: rgba(256,256,256,0.1);
+        background-color: rgb(60, 60, 60);
+        border: 1px solid gray;
+    }
+    .card:not(:last-child):not(#last-card)::after{
+        background-color: gray;
+    }
+    #github-button {
+        filter: invert(1)
+    }
+}
