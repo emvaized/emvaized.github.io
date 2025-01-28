@@ -60,7 +60,7 @@ const projects = {
                 ]
             ),
             new Project(
-                'Google Tweaker', 
+                'Google Search Tweaker', 
                 'Customize the Google Search page', 
                 'https://lh3.googleusercontent.com/dHV7KuW2w8ZhsYUCiQD9NY5s7bkKML2kmph7ucVoKkWXmful7OGyaACjOd76-9hW8cYQBwbaI-cXsgOycA-Cai6vNHA=s1280-w1280-h800',
                 'https://github.com/emvaized/google-tiles-extension/blob/master/icons/icon-new.png?raw=true', 
