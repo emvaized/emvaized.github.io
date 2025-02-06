@@ -186,16 +186,20 @@ function init(){
 
         function onCarouselScroll(){
             const leftArrow = card.querySelector('.arrow-left');
-            const rightArrow = card.querySelector('.arrow-right');
-            if (scroller.scrollLeft > 10){
-                leftArrow.style.visibility = 'visible';
-            } else {
-                leftArrow.style.visibility = 'hidden';
+            if (leftArrow) {
+                if (scroller.scrollLeft > 10){
+                    leftArrow.style.visibility = 'visible';
+                } else {
+                    leftArrow.style.visibility = 'hidden';
+                }
             }
-            if (scroller.scrollLeft + scroller.clientWidth < scroller.scrollWidth - 40){
-                rightArrow.style.visibility = 'visible';
-            } else {
-                rightArrow.style.visibility = 'hidden';
+            const rightArrow = card.querySelector('.arrow-right');
+            if (rightArrow){
+                if (scroller.scrollLeft + scroller.clientWidth < scroller.scrollWidth - 40){
+                    rightArrow.style.visibility = 'visible';
+                } else {
+                    rightArrow.style.visibility = 'hidden';
+                }
             }
         }
         scroller.onscroll = onCarouselScroll;
