@@ -45,7 +45,7 @@ const projects = {
                 'https://github.com/emvaized/open-in-popup-window-extension',
                 [
                     'https://img.shields.io/chrome-web-store/users/gmnkpkmmkhbgnljljcchnakehlkihhie?label=users&logo=googlechrome&logoColor=white&color=blue)](https://chrome.google.com/webstore/detail/open-in-popup-window/gmnkpkmmkhbgnljljcchnakehlkihhie',
-                    'https://img.shields.io/amo/users/open-in-popup-window?color=%23FF6611&label=users&logo=Firefox'
+                    'https://img.shields.io/chrome-web-store/rating/gmnkpkmmkhbgnljljcchnakehlkihhie'
                 ]
             ),
             new Project(
@@ -59,17 +59,17 @@ const projects = {
                     'https://img.shields.io/amo/rating/text-reflow-on-zoom-mobile'
                 ]
             ),
-            new Project(
-                'Google Search Tweaker', 
-                'Customize the Google Search page', 
-                'https://lh3.googleusercontent.com/dHV7KuW2w8ZhsYUCiQD9NY5s7bkKML2kmph7ucVoKkWXmful7OGyaACjOd76-9hW8cYQBwbaI-cXsgOycA-Cai6vNHA=s1280-w1280-h800',
-                'https://github.com/emvaized/google-tiles-extension/blob/master/icons/icon-new.png?raw=true', 
-                'https://github.com/emvaized/google-tiles-extension',
-                [
-                    'https://img.shields.io/chrome-web-store/users/cjbgjibpaopnjfbhipjfckeodbaednbg?label=users&logo=googlechrome&logoColor=white&color=blue',
-                    'https://img.shields.io/chrome-web-store/rating/cjbgjibpaopnjfbhipjfckeodbaednbg'
-                ]
-            ),
+            // new Project(
+            //     'Google Search Tweaker', 
+            //     'Customize the Google Search page', 
+            //     'https://lh3.googleusercontent.com/dHV7KuW2w8ZhsYUCiQD9NY5s7bkKML2kmph7ucVoKkWXmful7OGyaACjOd76-9hW8cYQBwbaI-cXsgOycA-Cai6vNHA=s1280-w1280-h800',
+            //     'https://github.com/emvaized/google-tiles-extension/blob/master/icons/icon-new.png?raw=true', 
+            //     'https://github.com/emvaized/google-tiles-extension',
+            //     [
+            //         'https://img.shields.io/chrome-web-store/users/cjbgjibpaopnjfbhipjfckeodbaednbg?label=users&logo=googlechrome&logoColor=white&color=blue',
+            //         'https://img.shields.io/chrome-web-store/rating/cjbgjibpaopnjfbhipjfckeodbaednbg'
+            //     ]
+            // ),
             new Project(
                 'Linkover', 
                 'Loads info about any link on hover or long click', 
