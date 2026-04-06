@@ -45,7 +45,7 @@ const projects = {
                 'https://github.com/emvaized/open-in-popup-window-extension',
                 [
                     'https://img.shields.io/chrome-web-store/users/gmnkpkmmkhbgnljljcchnakehlkihhie?label=users&logo=googlechrome&logoColor=white&color=blue)](https://chrome.google.com/webstore/detail/open-in-popup-window/gmnkpkmmkhbgnljljcchnakehlkihhie',
-                    'https://img.shields.io/amo/users/open-in-popup-window?color=%23FF6611&label=users&logo=Firefox'
+                    'https://img.shields.io/chrome-web-store/rating/gmnkpkmmkhbgnljljcchnakehlkihhie'
                 ]
             ),
             new Project(
